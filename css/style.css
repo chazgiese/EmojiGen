@@ -1,0 +1,199 @@
+/*
+ *
+ * EmojiGen.com CSS
+ * _
+ * Chaz Giese
+ * chazgiese@gmail.com
+ * www.chazgie.se
+ *
+ *
+ * FONT STRUCTURE (in order)
+ * _
+ * font: font-style
+         font-variant
+         font-weight
+         font-size/line-height
+         font-family
+ *
+ * font-size and font-family required
+ * values, other values are default or
+ * inherited if not declared.
+ *
+ *
+ */
+
+
+
+
+
+
+/*
+
+  B A S I C
+  _
+  common styles, text,
+  and formatting
+
+
+*/
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+section {
+  background-image: url('../img/background.png');
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+li {
+  margin: 0 auto;
+  padding: 0;
+}
+
+footer {
+  max-width: 100%;
+}
+
+
+
+
+
+
+/*
+
+  T Y P O G R A P H Y
+  _
+  styles and formatting
+  for text based content
+
+
+*/
+
+body {
+
+  font: normal
+        500
+        2.5vw/normal
+        'Poppins', sans-serif;
+  letter-spacing: 0.1em;
+  color: #000;
+}
+
+a,
+a:visited
+{
+  text-decoration: none;
+  color: #000;
+}
+
+header {
+  width: 100%;
+  margin: 0;
+  padding:2% 0;
+  line-height: 0;
+  background-color: #F3E9E8;
+}
+header ul {
+  margin: 0 5% 0 ;
+}
+header li {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 1vh 0 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  padding: 5%;
+  margin: 0;
+}
+
+h1{
+  font-size: 4vh;
+}
+h2 {
+  font-size: 8.5vw;
+  line-height: 1.25em;
+}
+h3 {
+  font-size: 8vw;
+}
+
+p {
+  font-size: 5vw;
+  line-height: 1.25em;
+  padding: 0 5%;
+}
+
+
+
+
+
+
+
+/*
+
+  I M A G E S
+  _
+  formatting for images
+
+
+*/
+
+header img {
+  height: 6vh;
+}
+
+#welcomeImage {
+  padding: 0;
+  width: 100%;
+
+}
+
+#mockupGif {
+  width: 50vw;
+}
+
+
+
+
+
+
+/*
+
+  D I S P L A Y -
+  S I Z E
+  V A R I A T I O N S
+  _
+  formatting for
+  different display
+  sizes
+
+
+*/
+
+@media (min-width: 750px) {
+
+}
+
+@media (min-width: 1334px) {
+
+}
