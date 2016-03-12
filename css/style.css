@@ -114,6 +114,7 @@ nav {
   opacity: .75;
 }
 #genButton:hover {
+  cursor: pointer;
   opacity: 1;
 }
 
@@ -132,7 +133,7 @@ section {
 }
 
 #genButton {
-  height: 20vh;
+  margin: 5vh 0 10vh;
   border: none;
   background: none;
 }
