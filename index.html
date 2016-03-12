@@ -7,10 +7,7 @@
     <title>EmojiGen</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,600' rel='stylesheet' type='text/css'>
-    <!-- TYPOGRAPHY TEST -->
-      <link href='https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Rubik:400,500,700|Poppins:400,500,600,700|Cambay:400,700|Palanquin+Dark:400,500,600|Martel+Sans:400,300,600,700,800|Catamaran:400,700,500,600' rel='stylesheet' type='text/css'>
-
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,600' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.gif"/>
   </head>
@@ -19,66 +16,28 @@
 
   <body>
 
-
     <header>
-      <ul>
-        <a href="/">
-
-          <li>
-            <img src="img/EmojiGen-Logo.png">
-          </li>
-
-          <li>
-            <h1>
-              EmojiGen
-            </h1>
-          </li>
-
-        </a>
-      </ul>
+      <nav>
+        <a href="/">EmojiGen</a>
+      </nav>
     </header>
 
-
-
-    <section>
-      <ul>
-
-        <li>
-          <img id="welcomeImage" src="img/helloEmojiGen.png">
-        </li>
-
-        <li>
-          <h2>
-            Randomly Generate Emojis on iPhone & the web app
-          </h2>
-        </li>
-
-
-
-        <li id="mockupGif">
-          <img src="img/EmojiGen-mockup.gif">
-        </li>
-
-        <li>
-          <h3>
-            EmojiGen + You = Art
-          </h3>
-          <p>
-            EmojiGen creates a random collection of emojis at the click of a button. The app generates the emojis, you create the context, and together we create art. Become a post-internet artist with a tap.
-          </p>
-        </li>
-
-      </ul>
-    </section>
-
-    <scrip src="/sripts/emojigen.js"></script>
+    <div id="contentWrap">
+      <section>
+        <div id="emojiBox">
+          &#x1F61B;&#x1F4F1;<br>&#x1F366;&#x1F486;
+        </div>
+      </section>
+      <button id="genButton">Gen</button>
+    </div>
 
     <footer>
-      <p>
-        EmojiGen is a project by <a href="http://chazgie.se" target="_blank">Chaz Giese</a>
-      </p>
+      <small>w/&#x2665; by <a href="http://twitter.com/chazgiese">@chazgiese</a>
+      </small>
     </footer>
 
+    <script src="emojigen.js"></script>
 
   </body>
+
 </html>

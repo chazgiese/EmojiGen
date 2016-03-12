@@ -7,173 +7,135 @@
  * www.chazgie.se
  *
  *
- * FONT STRUCTURE (in order)
- * _
- * font: font-style
-         font-variant
-         font-weight
-         font-size/line-height
-         font-family
- *
- * font-size and font-family required
- * values, other values are default or
- * inherited if not declared.
- *
- *
  */
 
 
 
 
 
-
 /*
-
-  B A S I C
-  _
-  common styles, text,
-  and formatting
-
-
+___________________
+     GLOBAL STYLES
 */
 
-html, body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
+* {
+  webkit-box-sizing: border-box;
+  moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: visible;
 }
 
-
-section {
-  background-image: url('../img/background.png');
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  max-width: 100%;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-li {
-  margin: 0 auto;
-  padding: 0;
-}
-
-footer {
-  max-width: 100%;
-}
-
-
-
-
-
-
-/*
-
-  T Y P O G R A P H Y
-  _
-  styles and formatting
-  for text based content
-
-
-*/
-
-body {
-
-  font: normal
-        500
-        2.5vw/normal
-        'Poppins', sans-serif;
-  letter-spacing: 0.1em;
-  color: #000;
-}
-
-a,
-a:visited
-{
-  text-decoration: none;
-  color: #000;
-}
-
+html,
+body,
 header {
   width: 100%;
   margin: 0;
-  padding:2% 0;
-  line-height: 0;
-  background-color: #F3E9E8;
-}
-header ul {
-  margin: 0 5% 0 ;
-}
-header li {
-  display: inline-block;
-  vertical-align: middle;
-  padding: 0 1vh 0 0;
-}
-
-h1,
-h2,
-h3 {
-  font-weight: 600;
-  padding: 5%;
-  margin: 0;
-}
-
-h1{
-  font-size: 4vh;
-}
-h2 {
-  font-size: 8.5vw;
-  line-height: 1.25em;
-}
-h3 {
-  font-size: 8vw;
-}
-
-p {
-  font-size: 5vw;
-  line-height: 1.25em;
-  padding: 0 5%;
+  padding: 0;
 }
 
 
+body {
+  height: 100vh;
+  background-image: url('../imgs/background.png');
+  color: #000;
+  font-family: 'Work Sans',
+              'Helvetica Neue',
+              helvetica,
+              sans-serif;
+  font-size: 1.33rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto;
+}
 
-
-
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+  font-weight: normal;
+  color: inherit;
+}
 
 
 /*
-
-  I M A G E S
-  _
-  formatting for images
-
-
+______________________
+     FLEX BOX CONTROLS
 */
 
-header img {
-  height: 6vh;
+body,
+nav,
+#contentWrap,
+section,
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
 }
 
-#welcomeImage {
-  padding: 0;
-  width: 100%;
-
+nav,
+footer {
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  justify-content: center;
 }
 
-#mockupGif {
-  width: 50vw;
+body,
+#contentWrap {
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
+section {
+-webkit-flex-direction: column;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+}
+/*
+_______________
+     TYPOGRAPHY
+*/
 
+nav {
+  letter-spacing: .133rem;
+  font-weight: 500;
+}
+#emojiBox {
+  font-family: 'Apple Color Emoji';
+  font-size: 6.66rem;
+  line-height: 7.2rem;
+  letter-spacing: .66rem;
+}
+#genButton {
+  font-size: 2.13rem;
+  font-weight: 200;
+  opacity: .75;
+}
+#genButton:hover {
+  opacity: 1;
+}
 
+/*
+___________________
+     CONTENT STYLES
+*/
+
+header {
+  height: 10vh;
+  padding: .67rem;
+}
+
+section {
+  height: 60vh;
+}
+
+#genButton {
+  height: 20vh;
+  border: none;
+  background: none;
+}
 
 
 
