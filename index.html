@@ -6,10 +6,11 @@
     <meta charset="utf-8">
     <title>EmojiGen</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,600' rel='stylesheet' type='text/css'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon.gif"/>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <link rel="shortcut icon" href="imgs/favicon.gif"/>
   </head>
 
 
@@ -19,25 +20,41 @@
     <header>
       <nav>
         <a href="/">EmojiGen</a>
+        <a href="#info">?</a>
       </nav>
     </header>
 
     <div id="contentWrap">
-      <section>
+
+      <section id="main">
+
         <div id="emojiBox">
           &#x1F61B;&#x1F4F1;<br>&#x1F366;&#x1F486;
         </div>
-      </section>
-      <div id="genButton">Gen</div>
-    </div>
+        <div id="genButton">Gen</div>
 
-    <footer>
-      <small>w/&#x2665; by <a href="http://twitter.com/chazgiese">@chazgiese</a>
-      </small>
-    </footer>
+      </section>
+
+      <section id="info">
+        <div class="sectionItem">
+          <h2>Randomly Generate Emoji</h2>
+          <p>The purpose of EmojiGen is to find new meanings through combination that is free of intention.</p>
+        </div>
+        <div class="sectionItem">
+          <span>w/&#x2665; by <a href="http://twitter.com/chazgiese">@chazgiese</a>
+          </span>
+        </div>
+      </section>
+
+
+
+    <!-- <footer>
+      <span>w/&#x2665; by <a href="http://twitter.com/chazgiese">@chazgiese</a>
+      </span>
+    </footer> -->
+  </div>
 
     <script src="emojigen.js"></script>
-
   </body>
 
 </html>

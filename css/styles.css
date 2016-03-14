@@ -29,6 +29,7 @@ html,
 body,
 header {
   width: 100%;
+  max-width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -36,7 +37,8 @@ header {
 
 body {
   height: 100vh;
-  background-image: url('../imgs/background.png');
+  background-image: url('../imgs/background.gif');
+  background-attachment: fixed;
   color: #000;
   font-family: 'Work Sans',
               'Helvetica Neue',
@@ -52,7 +54,6 @@ a,
 a:visited,
 a:hover {
   text-decoration: none;
-  font-weight: normal;
   color: inherit;
 }
 
@@ -64,7 +65,6 @@ ______________________
 
 body,
 nav,
-#contentWrap,
 section,
 footer {
   display: -webkit-box;
@@ -74,44 +74,51 @@ footer {
 }
 
 nav,
+section,
 footer {
   -webkit-flex-direction: row;
   flex-direction: row;
-  justify-content: center;
-}
-
-body,
-#contentWrap {
-  -webkit-flex-direction: column;
-  flex-direction: column;
   justify-content: space-between;
 }
 
-section {
--webkit-flex-direction: column;
-flex-direction: column;
-justify-content: center;
-align-content: center;
+body {
+  -webkit-flex-direction: column;
+  flex-direction: column;
 }
+
+section#main {
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
 /*
 _______________
      TYPOGRAPHY
 */
 
-nav {
-  letter-spacing: .133rem;
-  font-weight: 500;
+nav a {
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  font-weight: 300;
 }
+nav a:hover,
+#genButton:hover {
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
 #emojiBox {
   font-family: 'Apple Color Emoji';
   font-size: 6.66rem;
   line-height: 7.2rem;
   letter-spacing: .66rem;
 }
+
 #genButton {
   font-size: 2.13rem;
   font-weight: 200;
-  opacity: .75;
 }
 #genButton:hover {
   cursor: pointer;
@@ -124,37 +131,49 @@ ___________________
 */
 
 header {
-  height: 10vh;
-  padding: .67rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: .66rem;
+  background-image:
+    linear-gradient(-180deg,
+      rgba(255,255,255,1.0) 10%,
+      rgba(255,255,255,0.0) 100%);
+}
+nav {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-section {
-  height: 60vh;
+section#main {
+  min-height: 100vh;
+}
+
+#emojiBox {
+  padding-top: 7vh;
+  width: auto;
 }
 
 #genButton {
-  margin: 5vh 0 10vh;
-  border: none;
-  background: none;
+  width: auto;
+}
+
+.sectionItem {
+  width: 50%;
 }
 
 
 
-/*
-
-  D I S P L A Y -
-  S I Z E
-  V A R I A T I O N S
-  _
-  formatting for
-  different display
-  sizes
 
 
-*/
-
-@media (min-width: 750px) {
-
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+  #emojiBox {
+  -webkit-transform: scale(3);
+  line-height: 1.5rem;
+  letter-spacing: 0;
+}
 }
 
 @media (min-width: 1334px) {
