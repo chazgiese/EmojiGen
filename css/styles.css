@@ -128,7 +128,7 @@ nav a:hover,
   font-size: 2.13rem;
   font-weight: 200;
   padding: .25rem .75rem .5rem;
-  border: 2px solid #000;
+  border: 1px solid #000;
   border-radius: 10px;
   transition: ease-out .2s;
 }
@@ -136,7 +136,7 @@ nav a:hover,
   color: #ffDC2A;
   text-shadow: none;
   cursor: pointer;
-  border: 2px solid #ffDC2A;
+  border: 1px solid #ffDC2A;
   transition: ease-out .09s;
 }
 #genButton:active {
@@ -160,7 +160,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  padding:.33rem 1.125rem;
+  padding:.33rem .33rem;
   /*background-image:
     linear-gradient(-180deg,
       rgba(255,255,255,1.0) 10%,
@@ -190,9 +190,27 @@ section#main {
   padding: 1rem;
 }
 
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px)
+and (orientation : portrait) {
+  #emojiBox {
+    -webkit-transform: scale(4);
+    line-height: 1.33rem;
+    letter-spacing: 0;
+  }
+}
 
-
-
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+  #emojiBox {
+    -webkit-transform: scale(4);
+    line-height: 1.33rem;
+    letter-spacing: 0;
+  }
+}
 
 @media only screen
 and (min-device-width : 375px)
@@ -202,7 +220,6 @@ and (max-device-width : 667px) {
     line-height: 1.33rem;
     letter-spacing: 0;
   }
-
 }
 
 @media (max-width: 800px) {
