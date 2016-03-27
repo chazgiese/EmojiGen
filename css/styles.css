@@ -190,6 +190,13 @@ section#main {
   padding: 1rem;
 }
 
+
+/*
+__________________
+     MEDIA QUERIES
+     FOR iPHONES
+*/
+
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 480px)
@@ -229,5 +236,54 @@ and (max-device-width : 667px) {
   }
   .sectionItem {
     width: 100%;
+  }
+}
+
+/*
+__________________
+     MEDIA QUERIES
+     FOR iPADS
+*/
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 1)  {
+  #emojiBox {
+    -webkit-transform: scale(4);
+    line-height: 1.33rem;
+    letter-spacing: 0;
+  }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 1){
+  #emojiBox {
+    -webkit-transform: scale(4);
+    line-height: 1.33rem;
+    letter-spacing: 0;
+  }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  {
+  #emojiBox {
+    -webkit-transform: scale(4);
+    line-height: 1.33rem;
+    letter-spacing: 0;
+  }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 2) {
+  #emojiBox {
+    -webkit-transform: scale(4);
+    line-height: 1.33rem;
+    letter-spacing: 0;
   }
 }
