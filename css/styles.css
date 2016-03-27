@@ -248,7 +248,7 @@ __________________
 @media only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
-and (-webkit-min-device-pixel-ratio: 1)  {
+and (-webkit-min-device-pixel-ratio: 1) {
   #emojiBox {
     -webkit-transform: scale(4);
     line-height: 1.33rem;
@@ -259,7 +259,7 @@ and (-webkit-min-device-pixel-ratio: 1)  {
 @media only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
-and (-webkit-min-device-pixel-ratio: 1){
+and (-webkit-min-device-pixel-ratio: 1) {
   #emojiBox {
     -webkit-transform: scale(4);
     line-height: 1.33rem;
@@ -269,7 +269,7 @@ and (-webkit-min-device-pixel-ratio: 1){
 
 @media only screen
 and (min-device-width : 768px)
-and (max-device-width : 1024px)  {
+and (max-device-width : 1024px) {
   #emojiBox {
     -webkit-transform: scale(4);
     line-height: 1.33rem;
