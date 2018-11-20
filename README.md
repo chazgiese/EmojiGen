@@ -1,6 +1,6 @@
 # EmojiGen (Static Web Version)
 
-Randomly generate a collection of four emoji. Some emoji are
+Randomly generate a collection of four emoji. Some emoji are intentionally excluded, such as country flags, to make for less repetitive combinations
 
 ## To-do
 
