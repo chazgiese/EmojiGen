@@ -1,4 +1,4 @@
-var emojiBook = [
+let emojiBook = [
   "&#x1F600;", "&#x1F62C;", "&#x1F601;", "&#x1F602;", "&#x1F603;",
   "&#x1F604;", "&#x1F605;", "&#x1F606;", "&#x1F607;", "&#x1F609;",
   "&#x1F60A;", "&#x1F642;", "&#x1F643;", "&#x263A;&#xFE0F;", "&#x1F60B;",
@@ -94,7 +94,6 @@ var emojiBook = [
   "&#x1F32A;", "&#x1F32B;", "&#x2602;&#xFE0F;", "&#x2614;&#xFE0F;",
   "&#x1F4A7;",
   "&#x1F4A6;", "&#x1F30A;",
-
   "&#x1F34F;", "&#x1F34E;", "&#x1F350;", "&#x1F34A;", "&#x1F34B;",
   "&#x1F34C;", "&#x1F349;", "&#x1F347;", "&#x1F353;", "&#x1F348;",
   "&#x1F352;", "&#x1F351;", "&#x1F34D;", "&#x1F345;", "&#x1F346;",
@@ -109,7 +108,6 @@ var emojiBook = [
   "&#x1F37A;", "&#x1F37B;", "&#x1F377;", "&#x1F378;", "&#x1F379;",
   "&#x1F37E;", "&#x1F376;", "&#x1F375;", "&#x2615;&#xFE0F;", "&#x1F37C;",
   "&#x1F374;", "&#x1F37D;",
-
   "&#x26BD;&#xFE0F;", "&#x1F3C0;", "&#x1F3C8;", "&#x26BE;&#xFE0F;",
   "&#x1F3BE;",
   "&#x1F3D0;", "&#x1F3C9;", "&#x1F3B1;", "&#x26F3;&#xFE0F;", "&#x1F3CC;",
@@ -123,7 +121,6 @@ var emojiBook = [
   "&#x1F3B9;", "&#x1F3B7;", "&#x1F3BA;", "&#x1F3B8;", "&#x1F3BB;",
   "&#x1F3AC;", "&#x1F3AE;", "&#x1F47E;", "&#x1F3AF;", "&#x1F3B2;",
   "&#x1F3B0;", "&#x1F3B3;",
-
   "&#x1F697;", "&#x1F695;", "&#x1F699;", "&#x1F68C;", "&#x1F68E;",
   "&#x1F3CE;", "&#x1F693;", "&#x1F691;", "&#x1F692;", "&#x1F690;",
   "&#x1F69A;", "&#x1F69B;", "&#x1F69C;", "&#x1F3CD;", "&#x1F6B2;",
@@ -147,7 +144,6 @@ var emojiBook = [
   "&#x1F3E3;", "&#x1F3E4;", "&#x1F3E5;", "&#x1F3E6;", "&#x1F3E8;",
   "&#x1F3EA;", "&#x1F3EB;", "&#x1F3E9;", "&#x1F492;", "&#x1F3DB;",
   "&#x26EA;&#xFE0F;", "&#x1F54C;", "&#x1F54D;", "&#x1F54B;", "&#x26E9;",
-
   "&#x231A;&#xFE0F;", "&#x1F4F1;", "&#x1F4F2;", "&#x1F4BB;", "&#x2328;&#xFE0F;",
   "&#x1F5A5;", "&#x1F5A8;", "&#x1F5B1;", "&#x1F5B2;", "&#x1F579;",
   "&#x1F5DC;", "&#x1F4BD;", "&#x1F4BE;", "&#x1F4BF;", "&#x1F4C0;",
@@ -184,7 +180,6 @@ var emojiBook = [
   "&#x1F510;", "&#x1F512;", "&#x1F513;", "&#x1F50F;", "&#x1F58A;",
   "&#x1F58B;", "&#x2712;&#xFE0F;", "&#x1F4DD;", "&#x270F;&#xFE0F;", "&#x1F58D;",
   "&#x1F58C;", "&#x1F50D;", "&#x1F50E;",
-
   "&#x2764;&#xFE0F;", "&#x1F49B;", "&#x1F49A;", "&#x1F499;", "&#x1F49C;",
   "&#x1F494;", "&#x2763;&#xFE0F;", "&#x1F495;", "&#x1F49E;", "&#x1F493;",
   "&#x1F497;", "&#x1F496;", "&#x1F498;", "&#x1F49D;", "&#x1F49F;",
@@ -199,22 +194,11 @@ var emojiBook = [
   "&#x2650;&#xFE0F;", "&#x2651;&#xFE0F;", "&#x2652;&#xFE0F;", "&#x2653;&#xFE0F;",
   "&#x1F194;",
   "&#x269B;",
-
-  //"&#x1F233;",
-
   "&#x1F239;", "&#x2622;&#xFE0F;", "&#x2623;&#xFE0F;",
   "&#x1F4F4;", "&#x1F4F3;",
-
-  //jp specific symbols
-  //"&#x1F236;", "&#x1F21A;&#xFE0F;", "&#x1F238;", "&#x1F23A;", "&#x1F237;&#xFE0F;",
-
   "&#x2734;&#xFE0F;", "&#x1F19A;",
   "&#x1F251;",
   "&#x1F4AE;",
-
-  //jp specific symbols
-  //"&#x1F250;", "&#x3299;&#xFE0F;", "&#x3297;&#xFE0F;", "&#x1F234;", "&#x1F235;", "&#x1F232;",
-
   "&#x1F170;&#xFE0F;", "&#x1F171;&#xFE0F;",
   "&#x1F18E;",
   "&#x1F191;", "&#x1F17E;&#xFE0F;", "&#x1F198;", "&#x26D4;&#xFE0F;",
@@ -225,10 +209,6 @@ var emojiBook = [
   "&#x203C;&#xFE0F;", "&#x2049;&#xFE0F;", "&#x1F4AF;", "&#x1F505;", "&#x1F506;",
   "&#x1F531;", "&#x269C;", "&#x303D;&#xFE0F;", "&#x26A0;&#xFE0F;", "&#x1F6B8;",
   "&#x1F530;", "&#x267B;&#xFE0F;",
-
-  //jp specific symbols
-  //"&#x1F22F;&#xFE0F;",
-
   "&#x1F4B9;",
   "&#x2747;&#xFE0F;",
   "&#x2733;&#xFE0F;", "&#x274E;", "&#x2705;", "&#x1F4A0;", "&#x1F300;",
@@ -278,128 +258,5 @@ var emojiBook = [
   "&#x1F555;", "&#x1F556;", "&#x1F557;", "&#x1F558;", "&#x1F559;",
   "&#x1F55A;", "&#x1F55B;", "&#x1F55C;", "&#x1F55D;", "&#x1F55E;",
   "&#x1F55F;", "&#x1F560;", "&#x1F561;", "&#x1F562;", "&#x1F563;",
-  "&#x1F564;", "&#x1F565;", "&#x1F566;", "&#x1F567;",
-
-  // Flags Disabled
-  // "&#x1F1E6;&#x1F1EB;", "&#x1F1E6;&#x1F1FD;", "&#x1F1E6;&#x1F1F1;",
-  // "&#x1F1E9;&#x1F1FF;", "&#x1F1E6;&#x1F1F8;",
-  // "&#x1F1E6;&#x1F1E9;", "&#x1F1E6;&#x1F1F4;", "&#x1F1E6;&#x1F1EE;",
-  // "&#x1F1E6;&#x1F1F6;", "&#x1F1E6;&#x1F1EC;",
-  // "&#x1F1E6;&#x1F1F7;", "&#x1F1E6;&#x1F1F2;", "&#x1F1E6;&#x1F1FC;",
-  // "&#x1F1E6;&#x1F1FA;", "&#x1F1E6;&#x1F1F9;",
-  // "&#x1F1E6;&#x1F1FF;", "&#x1F1E7;&#x1F1F8;", "&#x1F1E7;&#x1F1ED;",
-  // "&#x1F1E7;&#x1F1E9;", "&#x1F1E7;&#x1F1E7;",
-  // "&#x1F1E7;&#x1F1FE;", "&#x1F1E7;&#x1F1EA;", "&#x1F1E7;&#x1F1FF;",
-  // "&#x1F1E7;&#x1F1EF;", "&#x1F1E7;&#x1F1F2;",
-  // "&#x1F1E7;&#x1F1F9;", "&#x1F1E7;&#x1F1F4;", "&#x1F1E7;&#x1F1F6;",
-  // "&#x1F1E7;&#x1F1E6;", "&#x1F1E7;&#x1F1FC;",
-  // "&#x1F1E7;&#x1F1F7;", "&#x1F1EE;&#x1F1F4;", "&#x1F1FB;&#x1F1EC;",
-  // "&#x1F1E7;&#x1F1F3;", "&#x1F1E7;&#x1F1EC;",
-  // "&#x1F1E7;&#x1F1EB;", "&#x1F1E7;&#x1F1EE;", "&#x1F1E8;&#x1F1FB;",
-  // "&#x1F1F0;&#x1F1ED;", "&#x1F1E8;&#x1F1F2;",
-  // "&#x1F1E8;&#x1F1E6;", "&#x1F1EE;&#x1F1E8;", "&#x1F1F0;&#x1F1FE;",
-  // "&#x1F1E8;&#x1F1EB;", "&#x1F1F9;&#x1F1E9;",
-  // "&#x1F1E8;&#x1F1F1;", "&#x1F1E8;&#x1F1F3;", "&#x1F1E8;&#x1F1FD;",
-  // "&#x1F1E8;&#x1F1E8;", "&#x1F1E8;&#x1F1F4;",
-  // "&#x1F1F0;&#x1F1F2;", "&#x1F1E8;&#x1F1EC;", "&#x1F1E8;&#x1F1E9;",
-  // "&#x1F1E8;&#x1F1F0;", "&#x1F1E8;&#x1F1F7;",
-  // "&#x1F1ED;&#x1F1F7;", "&#x1F1E8;&#x1F1FA;", "&#x1F1E8;&#x1F1FC;",
-  // "&#x1F1E8;&#x1F1FE;", "&#x1F1E8;&#x1F1FF;",
-  // "&#x1F1E9;&#x1F1F0;", "&#x1F1E9;&#x1F1EF;", "&#x1F1E9;&#x1F1F2;",
-  // "&#x1F1E9;&#x1F1F4;", "&#x1F1EA;&#x1F1E8;",
-  // "&#x1F1EA;&#x1F1EC;", "&#x1F1F8;&#x1F1FB;", "&#x1F1EC;&#x1F1F6;",
-  // "&#x1F1EA;&#x1F1F7;", "&#x1F1EA;&#x1F1EA;",
-  // "&#x1F1EA;&#x1F1F9;", "&#x1F1EA;&#x1F1FA;", "&#x1F1EB;&#x1F1F0;",
-  // "&#x1F1EB;&#x1F1F4;", "&#x1F1EB;&#x1F1EF;",
-  // "&#x1F1EB;&#x1F1EE;", "&#x1F1EB;&#x1F1F7;", "&#x1F1EC;&#x1F1EB;",
-  // "&#x1F1F5;&#x1F1EB;", "&#x1F1F9;&#x1F1EB;",
-  // "&#x1F1EC;&#x1F1E6;", "&#x1F1EC;&#x1F1F2;", "&#x1F1EC;&#x1F1EA;",
-  // "&#x1F1E9;&#x1F1EA;", "&#x1F1EC;&#x1F1ED;",
-  // "&#x1F1EC;&#x1F1EE;", "&#x1F1EC;&#x1F1F7;", "&#x1F1EC;&#x1F1F1;",
-  // "&#x1F1EC;&#x1F1E9;", "&#x1F1EC;&#x1F1F5;",
-  // "&#x1F1EC;&#x1F1FA;", "&#x1F1EC;&#x1F1F9;", "&#x1F1EC;&#x1F1EC;",
-  // "&#x1F1EC;&#x1F1F3;", "&#x1F1EC;&#x1F1FC;",
-  // "&#x1F1EC;&#x1F1FE;", "&#x1F1ED;&#x1F1F9;", "&#x1F1ED;&#x1F1F3;",
-  // "&#x1F1ED;&#x1F1F0;", "&#x1F1ED;&#x1F1FA;",
-  // "&#x1F1EE;&#x1F1F8;", "&#x1F1EE;&#x1F1F3;", "&#x1F1EE;&#x1F1E9;",
-  // "&#x1F1EE;&#x1F1F7;", "&#x1F1EE;&#x1F1F6;",
-  // "&#x1F1EE;&#x1F1EA;", "&#x1F1EE;&#x1F1F2;", "&#x1F1EE;&#x1F1F1;",
-  // "&#x1F1EE;&#x1F1F9;", "&#x1F1E8;&#x1F1EE;",
-  // "&#x1F1EF;&#x1F1F2;", "&#x1F1EF;&#x1F1F5;", "&#x1F1EF;&#x1F1EA;",
-  // "&#x1F1EF;&#x1F1F4;", "&#x1F1F0;&#x1F1FF;",
-  // "&#x1F1F0;&#x1F1EA;", "&#x1F1F0;&#x1F1EE;", "&#x1F1FD;&#x1F1F0;",
-  // "&#x1F1F0;&#x1F1FC;", "&#x1F1F0;&#x1F1EC;",
-  // "&#x1F1F1;&#x1F1E6;", "&#x1F1F1;&#x1F1FB;", "&#x1F1F1;&#x1F1E7;",
-  // "&#x1F1F1;&#x1F1F8;", "&#x1F1F1;&#x1F1F7;",
-  // "&#x1F1F1;&#x1F1FE;", "&#x1F1F1;&#x1F1EE;", "&#x1F1F1;&#x1F1F9;",
-  // "&#x1F1F1;&#x1F1FA;", "&#x1F1F2;&#x1F1F4;",
-  // "&#x1F1F2;&#x1F1F0;", "&#x1F1F2;&#x1F1EC;", "&#x1F1F2;&#x1F1FC;",
-  // "&#x1F1F2;&#x1F1FE;", "&#x1F1F2;&#x1F1FB;",
-  // "&#x1F1F2;&#x1F1F1;", "&#x1F1F2;&#x1F1F9;", "&#x1F1F2;&#x1F1ED;",
-  // "&#x1F1F2;&#x1F1F6;", "&#x1F1F2;&#x1F1F7;",
-  // "&#x1F1F2;&#x1F1FA;", "&#x1F1FE;&#x1F1F9;", "&#x1F1F2;&#x1F1FD;",
-  // "&#x1F1EB;&#x1F1F2;", "&#x1F1F2;&#x1F1E9;",
-  // "&#x1F1F2;&#x1F1E8;", "&#x1F1F2;&#x1F1F3;", "&#x1F1F2;&#x1F1EA;",
-  // "&#x1F1F2;&#x1F1F8;", "&#x1F1F2;&#x1F1E6;",
-  // "&#x1F1F2;&#x1F1FF;", "&#x1F1F2;&#x1F1F2;", "&#x1F1F3;&#x1F1E6;",
-  // "&#x1F1F3;&#x1F1F7;", "&#x1F1F3;&#x1F1F5;",
-  // "&#x1F1F3;&#x1F1F1;", "&#x1F1F3;&#x1F1E8;", "&#x1F1F3;&#x1F1FF;",
-  // "&#x1F1F3;&#x1F1EE;", "&#x1F1F3;&#x1F1EA;",
-  // "&#x1F1F3;&#x1F1EC;", "&#x1F1F3;&#x1F1FA;", "&#x1F1F3;&#x1F1EB;",
-  // "&#x1F1F2;&#x1F1F5;", "&#x1F1F0;&#x1F1F5;",
-  // "&#x1F1F3;&#x1F1F4;", "&#x1F1F4;&#x1F1F2;", "&#x1F1F5;&#x1F1F0;",
-  // "&#x1F1F5;&#x1F1FC;", "&#x1F1F5;&#x1F1F8;",
-  // "&#x1F1F5;&#x1F1E6;", "&#x1F1F5;&#x1F1EC;", "&#x1F1F5;&#x1F1FE;",
-  // "&#x1F1F5;&#x1F1EA;", "&#x1F1F5;&#x1F1ED;",
-  // "&#x1F1F5;&#x1F1F3;", "&#x1F1F5;&#x1F1F1;", "&#x1F1F5;&#x1F1F9;",
-  // "&#x1F1F5;&#x1F1F7;", "&#x1F1F6;&#x1F1E6;",
-  // "&#x1F1F7;&#x1F1EA;", "&#x1F1F7;&#x1F1F4;", "&#x1F1F7;&#x1F1FA;",
-  // "&#x1F1F7;&#x1F1FC;", "&#x1F1E7;&#x1F1F1;",
-  // "&#x1F1F8;&#x1F1ED;", "&#x1F1F0;&#x1F1F3;", "&#x1F1F1;&#x1F1E8;",
-  // "&#x1F1F5;&#x1F1F2;", "&#x1F1FB;&#x1F1E8;",
-  // "&#x1F1FC;&#x1F1F8;", "&#x1F1F8;&#x1F1F2;", "&#x1F1F8;&#x1F1F9;",
-  // "&#x1F1F8;&#x1F1E6;", "&#x1F1F8;&#x1F1F3;",
-  // "&#x1F1F7;&#x1F1F8;", "&#x1F1F8;&#x1F1E8;", "&#x1F1F8;&#x1F1F1;",
-  // "&#x1F1F8;&#x1F1EC;", "&#x1F1F8;&#x1F1FD;",
-  // "&#x1F1F8;&#x1F1F0;", "&#x1F1F8;&#x1F1EE;", "&#x1F1F8;&#x1F1E7;",
-  // "&#x1F1F8;&#x1F1F4;", "&#x1F1FF;&#x1F1E6;",
-  // "&#x1F1EC;&#x1F1F8;", "&#x1F1F0;&#x1F1F7;", "&#x1F1F8;&#x1F1F8;",
-  // "&#x1F1EA;&#x1F1F8;", "&#x1F1F1;&#x1F1F0;",
-  // "&#x1F1F8;&#x1F1E9;", "&#x1F1F8;&#x1F1F7;", "&#x1F1F8;&#x1F1FF;",
-  // "&#x1F1F8;&#x1F1EA;", "&#x1F1E8;&#x1F1ED;",
-  // "&#x1F1F8;&#x1F1FE;", "&#x1F1F9;&#x1F1FC;", "&#x1F1F9;&#x1F1EF;",
-  // "&#x1F1F9;&#x1F1FF;", "&#x1F1F9;&#x1F1ED;",
-  // "&#x1F1F9;&#x1F1F1;", "&#x1F1F9;&#x1F1EC;", "&#x1F1F9;&#x1F1F0;",
-  // "&#x1F1F9;&#x1F1F4;", "&#x1F1F9;&#x1F1F9;",
-  // "&#x1F1F9;&#x1F1F3;", "&#x1F1F9;&#x1F1F7;", "&#x1F1F9;&#x1F1F2;",
-  // "&#x1F1F9;&#x1F1E8;", "&#x1F1F9;&#x1F1FB;",
-  // "&#x1F1FA;&#x1F1EC;", "&#x1F1FA;&#x1F1E6;", "&#x1F1E6;&#x1F1EA;",
-  // "&#x1F1EC;&#x1F1E7;", "&#x1F1FA;&#x1F1F8;",
-  // "&#x1F1FB;&#x1F1EE;", "&#x1F1FA;&#x1F1FE;", "&#x1F1FA;&#x1F1FF;",
-  // "&#x1F1FB;&#x1F1FA;", "&#x1F1FB;&#x1F1E6;",
-  // "&#x1F1FB;&#x1F1EA;", "&#x1F1FB;&#x1F1F3;", "&#x1F1FC;&#x1F1EB;",
-  // "&#x1F1EA;&#x1F1ED;", "&#x1F1FE;&#x1F1EA;",
-  // "&#x1F1FF;&#x1F1F2;", "&#x1F1FF;&#x1F1FC;"
-];
-
-var getEmoji = {
- randomEmoji: function() {
-   var randomNumber = Math.floor(Math.random() * emojiBook.length);
-   return emojiBook[randomNumber];
- }
-}
-
-function printEmoji(emoji) {
-  var emojiBox = document.getElementById("emojiBox");
-  emojiBox.innerHTML = emoji;
-}
-
-var genButton = document.getElementById("genButton");
-
-genButton.onclick = function() {
-  var emoji1 = getEmoji.randomEmoji();
-  var emoji2 = getEmoji.randomEmoji();
-  var emoji3 = getEmoji.randomEmoji();
-  var emoji4 = getEmoji.randomEmoji();
-  printEmoji(emoji1 + "" + emoji2 + "<br>" + emoji3 + "" + emoji4);
-};
+  "&#x1F564;", "&#x1F565;", "&#x1F566;", "&#x1F567;"
+]
