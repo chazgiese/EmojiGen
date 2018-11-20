@@ -4,7 +4,7 @@ ___________________
 */
 
 $yellow: #FAAD00;
-$gray: #e6e6e6;
+$gray: #E6E6E6;
 
 /*
 ___________________
@@ -119,15 +119,17 @@ footer {
 }
 
 
-
 /*
 _______________________________________
      BUTTONS
 */
 
 #emoji-box {
+  align-items: flex-end;
+  display: flex;
   font-family: monospace;
   font-size: 6rem;
+  height: 200px;
   line-height: 1.05em;
   letter-spacing: 0.04em;
   margin-top: 40px;
@@ -151,104 +153,5 @@ _______________________________________
 
   &:active {
     opacity: .5;
-  }
-}
-
-
-/*
-__________________
-     MEDIA QUERIES
-     FOR iPHONES
-*/
-
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px)
-and (orientation : portrait) {
-  #emojiBox {
-    line-height: 1.05;
-    letter-spacing: 0;
-  }
-}
-
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 568px)
-and (orientation : portrait) {
-  #emojiBox {
-    line-height: 1.05;
-    letter-spacing: 0;
-  }
-}
-
-@media only screen
-and (min-device-width : 375px)
-and (max-device-width : 667px) {
-  #emojiBox {
-    line-height: 1.05;
-    letter-spacing: 0;
-  }
-
-  #genButton:hover {
-    color: #ffDC2A;
-    border: 1px solid #ffDC2A;
-    transition: ease-out .2s;
-  }
-}
-
-@media (max-width: 800px) {
-  section#info {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-  }
-  .sectionItem {
-    width: 100%;
-  }
-}
-
-/*
-__________________
-     MEDIA QUERIES
-     FOR iPADS
-*/
-
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (-webkit-min-device-pixel-ratio: 1) {
-  #emojiBox {
-    line-height: 1.05;
-    letter-spacing: 0;
-  }
-}
-
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (-webkit-min-device-pixel-ratio: 1) {
-  #emojiBox {
-
-    line-height: 1.05;
-    letter-spacing: 0;
-  }
-}
-
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px) {
-  #emojiBox {
-
-    line-height: 1.05;
-    letter-spacing: 0;
-  }
-}
-
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (-webkit-min-device-pixel-ratio: 2) {
-  #emojiBox {
-    line-height: 1.05;
-    letter-spacing: 0;
   }
 }
