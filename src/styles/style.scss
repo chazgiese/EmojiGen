@@ -48,25 +48,28 @@ _______________________________________
 */
 
 header {
-  left: -23px;
   position: fixed;
-  top: 64px;
-  transform: rotate(90deg);
-  width: auto;
-  z-index: 1000
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  font-weight: bolder;
 }
 
 nav {
-  align-items: center;
+  background: $yellow;
+  padding: 8px 16px 10px 16px;
+  border-radius: 0 0 10px 10px;
   display: flex;
-}
-
-nav a {
-  font-weight: bolder;
-
-  &:first-child {
-    transform: rotate(-90deg)
+  a {
+    color: #FFFFFF;
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
   }
+
 }
 
 .main__top,

@@ -1,19 +1,24 @@
-import gulp from 'gulp';
-import sass from 'gulp-sass';
-import babel from 'gulp-babel';
-import concat from 'gulp-concat';
-import uglify from 'gulp-uglify';
-import rename from 'gulp-rename';
-import cleanCSS from 'gulp-clean-css';
+import gulp from 'gulp'
+import sass from 'gulp-sass'
+import babel from 'gulp-babel'
+import concat from 'gulp-concat'
+import uglify from 'gulp-uglify'
+import rename from 'gulp-rename'
+import cleanCSS from 'gulp-clean-css'
+import imagemin from 'gulp-imagemin'
 
 const paths = {
   styles: {
     src: 'src/styles/*.scss',
-    dest: 'assets/styles/'
+    dest: 'app/assets/styles/'
   },
   scripts: {
     src: 'src/scripts/*.js',
-    dest: 'assets/scripts/'
+    dest: 'app/assets/scripts/'
+  },
+  images: {
+    src: 'src/images/*',
+    dest: 'app/assets/images'
   }
 };
 
@@ -36,13 +41,18 @@ export function scripts() {
     .pipe(gulp.dest(paths.scripts.dest));
 }
 
-function watchFiles() {
+export function images() {
+  return gulp.src(paths.images.src)
+    .pipe(imagemin())
+    .pipe(gulp.dest(paths.images.dest))
+}
+
+export function watch() {
   gulp.watch(paths.scripts.src, scripts);
   gulp.watch(paths.styles.src, styles);
 }
-export { watchFiles as watch };
 
-const build = gulp.series(gulp.parallel(styles, scripts));
+const build = gulp.series(gulp.parallel(styles, scripts, images));
 gulp.task('build', build);
 
 
